@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+  --font-serif: "Young Serif", serif;
+  --color-white: hsl(0, 0%, 100%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  @apply border-stone-150;
+}
+
+body {
+  @apply text-stone-600 font-sans leading-normal tracking-normal bg-stone-100;
+}
+
+h1,
+h2 {
+  @apply font-serif;
+}
+
+h1 {
+  @apply text-4xl text-stone-900 font-bold tracking-wide;
+}
+
+h2 {
+  @apply text-2xl mb-6 text-brown-800 font-medium tracking-wide;
+}
+
+article {
+  @apply my-12 border-b pb-8;
+}
