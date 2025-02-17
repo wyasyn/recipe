@@ -27,13 +27,22 @@ h2 {
 }
 
 h1 {
-  @apply text-4xl text-stone-900 font-bold tracking-wide;
+  @apply text-2xl sm:text-4xl text-stone-900 font-bold tracking-wide;
 }
 
 h2 {
   @apply text-2xl mb-6 text-brown-800 font-medium tracking-wide;
 }
 
-article {
+section {
   @apply my-12 border-b pb-8;
+}
+
+ul,
+ol {
+  @apply list-outside space-y-4 pl-4 sm:pl-8;
+}
+
+li {
+  @apply marker:text-brown-800 marker:font-semibold pl-4 sm:pl-8;
 }
